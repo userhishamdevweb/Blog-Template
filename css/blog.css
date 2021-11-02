@@ -1,0 +1,291 @@
+/* start global rules */
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+body {
+  font-family: 'Raleway', sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* start container */
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  /* background-color: #ccc; */
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* end container */
+
+/* start responsive  */
+
+/* small screens */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* medium screens */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* large screens */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* end responsive  */
+
+/* end global rules */
+
+/* start header   */
+.header{
+        text-align: center;
+        margin-bottom:50px;
+        margin-top: 50px;
+}
+.header h1{
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 40px;
+}
+.header p{
+        font-size: 15px;
+}
+.header p span{
+        margin-left: 3px;
+        color: #fff;
+        background-color: #000;
+        padding: 3px 10px;
+}
+/* end header   */
+
+/* start content  */
+.content{
+        display: flex;
+        /* justify-content: space-between; */
+        /* align-items: flex-start; */
+       margin: 0;
+}
+.content .left{
+        display: flex;
+        flex-direction: column;
+        /* width: 60%; */
+        margin-left: 20px;
+        margin-right: 20px;
+        
+        
+}
+
+.content .left .box {
+        margin-bottom: 40px;
+        padding-bottom: 20px;
+        box-shadow: 1px 0px 30px 2px rgb(141, 141, 141) ;
+}
+.content .left .box img{
+        width: 100%;
+}
+.content .left .box h3{
+        text-transform: uppercase;
+        margin-left: 10px;
+        font-weight: 600;
+        margin-top: 10px;
+}
+.content .left .box p:first-of-type{
+        font-size: 20px;
+        margin-left: 10px;
+}
+.content .left .box p:first-of-type span{
+        color: rgb(119, 119, 119);
+}
+.content .left .box p:last-of-type{
+        font-size: 15px;
+        margin-left: 10px;
+        line-height: 1.6;
+}
+.content .left .box .footer{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        margin-left: 10px;
+        margin-right: 10px;
+}
+.content .left .box .footer a{
+        color: black;
+        border: 1px solid black;
+        font-size: 15px;
+        padding: 15px;
+        text-transform: uppercase;
+        font-weight: bold;
+        line-height: 0.4;
+
+}
+.content .left .box .footer p{
+          color: black;
+        font-size: 15px;
+        margin-right: 10px;
+        text-transform: uppercase;
+        font-weight: bold;
+        line-height: 0.4;
+}
+.content .left .box .footer p span{
+        padding: 0px 6px;
+        font-size: 15px;
+        background-color: black;
+        color: #fff;
+}
+.content .left .box .footer p .rounded{
+        padding: 0px 6px;
+        font-size: 15px;
+        background-color: black;
+        color: #fff;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+}
+/* right */
+.content .right{
+        display: flex;
+        flex-direction: column;
+        margin-right: 15px;
+
+}
+.content .right .me{
+        width:400px;
+        border: 1px solid rgb(201, 201, 201);
+        box-shadow: 1px 0px 30px 2px rgb(141, 141, 141) ;
+}
+.content .right .me img{
+        width: 100%;
+}
+.content .right .me h3{
+        margin-left: 10px;
+        font-weight: bold;
+        font-size: 25px;
+        
+}
+.content .right .me p{
+        margin-left: 10px;
+        font-size: 17px;
+        line-height: 1.6;
+}
+
+.content .right .post{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 400px;
+        box-shadow: 1px 0px 30px 2px rgb(141, 141, 141) ;
+        margin-top: 40px;
+        border: 1px solid rgb(225, 223, 223);
+}
+.content .right .post .header {
+        margin: 0;
+        width: 100%;
+        background-color: rgb(197, 199, 199);
+}
+.content .right .post .header h3{
+        /* padding: 15px 0; */
+        padding-left: 15px;
+        text-align: left;
+        font-weight: normal;
+        font-size: 25px;
+
+}
+.content .right .post .cont{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 120px;
+        transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+}
+.content .right .post .cont:not(:last-of-type){
+        border-bottom: 1px solid rgb(225, 223, 223)
+}
+.content .right .post .cont:hover{
+        background-color: rgb(186, 174, 174);
+}
+.content .right .post .cont img{
+        width:100px;
+        margin-left: 10px;
+}
+.content .right .post .cont .text{
+       width: 100%;
+}
+.content .right .post .cont .text h4 {
+       margin-left: 10px;
+       font-size: 23px;
+}
+.content .right .post .cont .text p {
+       margin-left:10px;
+       font-size: 16px;
+       margin-bottom: 30px;
+}
+
+.content .right .tags{
+        border: 1px solid rgb(207, 199, 199);
+        padding: 0;
+        margin-top: 20px;
+        min-height: 225px;
+        margin-bottom: 30px;
+}
+.content .right .tags .header{
+        margin: 0;
+        margin-top: -25px;
+        width: 100%;
+        background-color: rgb(197, 199, 199);
+}
+.content .right .tags .header h3{
+        padding-left: 15px;
+        padding-top: 25px;
+        text-align: left;
+        font-weight: normal;
+        font-size: 25px;
+        height: 80px;
+}
+.content .right .tags .atag{
+        width: 100%;
+}
+.content .right .tags span{
+        background-color: rgb(231, 243, 243);
+        font-size: 15px;
+        font-weight: normal;
+        padding: 5px;
+       margin-left: 10px;
+}
+/* end content  */
+
+/* start about  */
+/* end about  */
+
+/* start menu  */
+/* end menu  */
+
+/* start footer  */
+/* end footer  */
